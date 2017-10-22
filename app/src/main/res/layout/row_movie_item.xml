@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.20">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/icons8"
+                    android:id="@+id/img_basket"
+                    android:layout_weight="0.1"
+                    android:layout_gravity="center" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:background="#FF0000FF"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:text="توضیحات"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_des3"
+                    android:layout_weight="0.09"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/bg_login" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:textDirection="rtl"
+                android:layout_width="150dp"
+                android:layout_weight="0.35">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                            android:id="@+id/txt_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/thumbnail"
+                            android:paddingLeft="@dimen/album_title_padding"
+                            android:paddingRight="@dimen/album_title_padding"
+                            android:paddingTop="@dimen/album_title_padding"
+                            android:textColor="@color/album_title"
+                            android:textSize="@dimen/album_title"
+                        android:layout_weight="0.50" />
+
+                    <TextView
+                        android:text="نام فیلم:"
+                        android:layout_width="52dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textDirection="inherit"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/txt_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/thumbnail"
+                        android:textColor="@color/album_title"
+                        android:textSize="@dimen/album_title"
+                        android:layout_weight="0.50" />
+
+                    <TextView
+                        android:text="قیمت:"
+                        android:layout_width="41dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView2"
+                        android:layout_gravity="center" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                    android:id="@+id/image2"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

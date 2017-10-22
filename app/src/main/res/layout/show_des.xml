@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Activity.ShowDes">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:text="TextView"
+                            android:layout_width="296dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_dur"
+                            android:gravity="right" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_time2"
+                            tools:text="مدت زمان :"
+                            android:layout_weight="0.30"
+                            android:text="مدت زمان :" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:text="TextView"
+                            android:layout_width="325dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_lan"
+                            android:gravity="right" />
+                        <TextView
+                            android:text="زبان : "
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_lan2"
+                            android:gravity="right"
+                            android:layout_weight="1"
+                            tools:text="زبان :" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:text="TextView"
+                            android:layout_width="304dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_made"
+                            android:gravity="right" />
+                        <TextView
+                            android:text="محصول : "
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_brand2"
+                            android:layout_weight="1"
+                            tools:text="محصول : "
+                            android:gravity="right" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:text="حجم : "
+                            android:layout_width="330dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_haj"
+                            tools:text="حجم : "
+                            android:gravity="right" />
+                        <TextView
+                            android:text="حجم : "
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_haj2"
+                            android:layout_weight="1"
+                            tools:text="حجم : "
+                            android:gravity="right" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:text="TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_rul"
+                            android:gravity="right"
+                            android:layout_weight="3.36" />
+                        <TextView
+                            android:text="بازیگران : "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_dir2"
+                            android:layout_weight="0.50"
+                            tools:text="بازیگران :"
+                            android:gravity="right" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:text="TextView"
+                            android:layout_width="309dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_dir"
+                            android:gravity="right" />
+                        <TextView
+                            android:text="کارگردان : "
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_dir1"
+                            android:layout_weight="1"
+                            tools:text="کارگردان : "
+                            android:gravity="right" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:text="TextView"
+                            android:layout_width="211dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_des"
+                            android:gravity="right"
+                            android:layout_weight="8.30" />
+                        <TextView
+                            android:text="خلاصه فیلم :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="70dp"
+                            android:id="@+id/txt_des2"
+                            android:layout_weight="0.50" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="381dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="0.9">
+                        <ExpandableListView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:id="@+id/exv_message"></ExpandableListView>
+
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/btn_login_bg"
+                    android:orientation="vertical"
+                    android:layout_height="210dp"
+                    android:layout_weight="3.85">
+
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="?android:attr/textColorPrimaryInverseNoDisable"
+                        android:hint="@string/contact_form_name"
+                        android:inputType="textPersonName"
+                        android:textColor="?android:attr/colorFocusedHighlight"
+                        android:textColorHint="?android:attr/colorActivatedHighlight"
+                        android:id="@+id/edt_name"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:hint="@string/contact_form_email"
+                        android:inputType="textEmailAddress"
+                        android:textColor="?android:attr/colorFocusedHighlight"
+                        android:textColorHint="@android:color/holo_orange_dark"
+                        android:id="@+id/edt_email"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:gravity="top"
+                        android:hint="@string/contact_form_message"
+                        android:fitsSystemWindows="true"
+                        android:breakStrategy="balanced"
+                        android:inputType="textMultiLine"
+                        android:singleLine="false"
+                        android:padding="5dp"
+                        android:textColor="?android:attr/colorFocusedHighlight"
+                        android:textColorHint="@android:color/holo_orange_dark"
+                        android:id="@+id/edt_message"
+                        android:layout_height="100dp"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@android:color/holo_orange_dark"
+                        android:elevation="4dp"
+                        android:paddingLeft="70dp"
+                        android:paddingRight="70dp"
+                        android:text="@string/contact_form_send"
+                        android:textColor="@color/bg_login"
+                        android:id="@+id/btn_send" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_cart" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:weightSum="1">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="70dp"
+            android:background="@color/input_login_hint"
+            android:layout_weight="0.37">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/buttion">
+
+                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="فاکتور خرید فیلم "
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:background="@drawable/buttion" /><![CDATA[
+
+                >
+            ]]>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:text="تاریخ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/date"
+                    android:layout_weight="0.35"
+                    android:gravity="center"
+                    android:background="@drawable/buttion" />
+
+                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="تعداد  "
+                android:layout_weight="0.50"
+                android:gravity="center"
+                android:background="@drawable/buttion" />
+
+            <TextView
+                android:text="قیمت کل  "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:layout_weight="0.35"
+                android:gravity="center"
+                android:background="@drawable/buttion" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_date"
+                    android:layout_weight="0.35"
+                    android:layout_gravity="center" />
+
+                <TextView android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.35"
+                    android:id="@+id/txt_count"
+                    android:gravity="center" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_all_price"
+                    android:layout_weight="0.35"
+                    android:gravity="center" />
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:text="انصراف و بازگشت"
+                android:layout_width="137dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_back"
+                android:background="@color/btn_logut_bg" />
+
+            <Button
+                android:text="تصحیح"
+                android:layout_width="112dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_keepon"
+                android:background="@color/btn_login" />
+            <Button
+                android:text="ادامه خرید"
+                android:layout_width="112dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_redo"
+                android:background="@color/btn_login" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
