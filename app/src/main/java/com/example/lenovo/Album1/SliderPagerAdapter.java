@@ -1,4 +1,4 @@
-package com.example.lenovo.Album1.Activity.recyclerview;
+package com.example.lenovo.Album1;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -10,6 +10,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+
+import com.bumptech.glide.Glide;
+import com.example.lenovo.Album1.R;
+import com.example.lenovo.Album1.Database.ImageModel;
 
 import java.io.InputStream;
 import java.net.URL;
@@ -42,55 +46,18 @@ public class SliderPagerAdapter extends PagerAdapter{
     @Override
     public Object instantiateItem(ViewGroup view, int position) {
         View imageLayout = inflater.inflate(R.layout.slider, view, false);
-        assert imageLayout != null;
-        final ImageView imageView = (ImageView) imageLayout
-                .findViewById(R.id.image);
-        //Glide.with(context).load(imageModelArrayList.get(position)).into(imageView);
-        new LoadImage(imageView).execute(String.valueOf(imageModelArrayList.get(position).getImage_drawable()));
-        view.addView(imageLayout, 0);
+        ImageView imageView = (ImageView) imageLayout.findViewById(R.id.image);
+
+        Glide.with(context)
+                .load(imageModelArrayList.get(position).getImage_drawable())
+                .into(imageView);
+
+        view.addView(imageLayout);
         return imageLayout;
     }
 
     @Override
     public boolean isViewFromObject(View view, Object object) {
         return view.equals(object);
-    }
-
-    @Override
-    public void restoreState(Parcelable state, ClassLoader loader) {
-    }
-
-    @Override
-    public Parcelable saveState() {
-        return null;
-    }
-    private class LoadImage extends AsyncTask<String, String, Bitmap> {
-        ImageView img = null;
-
-        public LoadImage(ImageView img) {
-            this.img = img;
-        }
-
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-
-        }
-
-        protected Bitmap doInBackground(String... args) {
-            Bitmap bitmap = null;
-            try {
-                bitmap = BitmapFactory.decodeStream((InputStream) new URL(args[0]).getContent());
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-            return bitmap;
-        }
-
-        protected void onPostExecute(Bitmap image) {
-            if (image != null) {
-                img.setImageBitmap(image);
-            }
-        }
     }
 }

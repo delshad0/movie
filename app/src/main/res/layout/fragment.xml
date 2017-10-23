@@ -3,31 +3,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="250dp">
+    android:layout_height="match_parent">
 
         <RelativeLayout
+            android:background="#f22"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="120dp">
 
                 <android.support.v4.view.ViewPager
-                    android:id="@+id/j"
+                    android:id="@+id/two_frag_viewPager"
                     android:layout_width="match_parent"
-                    android:layout_height="242dp"
+                    android:layout_height="120dp"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentBottom="true" />
 
-                <com.viewpagerindicator.CirclePageIndicator
+                <me.relex.circleindicator.CircleIndicator
                     android:id="@+id/indicator6"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:gravity="bottom"
-                    android:padding="10dip"
-                    app:centered="true"
-                    app:fillColor="#df0623"
-                    app:pageColor="#fff"
-                    app:snap="false" />
+                    android:gravity="center"
+                    app:ci_drawable="@drawable/icon_indicator"
+ />
         </RelativeLayout>
 
 </LinearLayout>

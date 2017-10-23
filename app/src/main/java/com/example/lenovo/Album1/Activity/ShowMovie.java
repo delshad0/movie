@@ -167,9 +167,9 @@ public class ShowMovie extends AppCompatActivity {
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         //adapter.addFrag(new FiveFragment(2), "رایگان");
-        adapter.addFrag(new FourFragment(1), "انیمیشن");
-        //adapter.addFrag(new TwoFragment(0), "سریال");
-        adapter.addFrag(new TreeFragment(3), "فیلم");
+//        adapter.addFrag(new FourFragment(1), "انیمیشن");
+        adapter.addFrag(new TwoFragment(), "سریال");
+//        adapter.addFrag(new TreeFragment(), "فیلم");
         //adapter.addFrag(new OneFragment(), "خانه");
         viewPager.setAdapter(adapter);
     }
